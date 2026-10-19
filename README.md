@@ -91,7 +91,7 @@ Test-set modification: The test set contains 534 images, including 234 normal im
 The final dataset contains 3,272 images across training, validation, and testing. All reported performance metrics will be calculated using the designated evaluation sets, with the test set remaining untouched until the final model evaluation.
 
 
-
+Manipulated Data Set URL "https://drive.google.com/drive/folders/1IAGEJF_xJeVSPK_Q5ADtZvDDgZBTFS02?usp=sharing"
 \## How to Run
 
 Just run the notebook pneumonia\_detector.ipynb , each cell successively 
