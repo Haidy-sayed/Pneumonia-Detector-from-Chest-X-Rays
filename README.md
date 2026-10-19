@@ -55,6 +55,42 @@ dataset url : https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneum
 
 
 
+Dataset Manipulation and Final Distribution
+The original dataset was reorganized to address class imbalance in training and to establish a larger validation set for model selection and a separate test set for final evaluation. Images were reassigned from the original training set to the validation and test sets; no new images were introduced.
+The training set was balanced to contain 1,330 images per class. The final dataset distribution is as follows:
+Split
+Normal
+Pneumonia
+Total
+Training
+1,330
+1,330
+2,660
+Validation
+30
+48
+78
+Testing
+234
+300
+534
+Total
+1,594
+1,678
+3,272
+
+Training-set balancing: The original training set contained approximately 2.89 pneumonia images for every normal image, with pneumonia representing approximately 74.3% of the training data. To address this imbalance, the training set was balanced to a 1:1 class ratio. The resulting training set contains 2,660 images, with 1,330 images in each class.
+
+
+Validation-set modification: The validation set was increased from 16 to 78 images by reallocating images from the original training set. This provides more evaluation examples for model selection and hyperparameter tuning, although the resulting set remains relatively small.
+
+
+Test-set modification: The test set contains 534 images, including 234 normal images and 300 pneumonia images. The original test set was reduced from 624 images to 534 images. The test set is reserved for final performance evaluation and is not used for model training or model selection.
+
+
+The final dataset contains 3,272 images across training, validation, and testing. All reported performance metrics will be calculated using the designated evaluation sets, with the test set remaining untouched until the final model evaluation.
+
+
 
 \## How to Run
 
