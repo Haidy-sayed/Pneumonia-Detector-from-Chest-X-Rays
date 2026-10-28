@@ -37,6 +37,7 @@ bridges my clinical domain knowledge with deep learning.
 \## Results till 16-06-2026
 
 \[Test accuracy 71.79%] >>> will tune the parametrs later (I think i should increase the hidden layers size cuz now we are running on jst 2 layers 1 hidden and 1 output)
+\[Test accuracy 73.40%] >>> after increasing the number of epochs to 100.       Dated : 10.28.26
 
 
 
